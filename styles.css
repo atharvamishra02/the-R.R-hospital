@@ -1,0 +1,425 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+ section .container h2{
+    color: #0073e6;
+}
+
+ header .container img{
+    height: 100px;
+    position: absolute;
+    top: 15px;
+    left: 270px;
+}
+
+@media (max-width: 768px) {
+    header .container img {
+        height: 48px; /* Slightly smaller */
+        top: 20px;
+        left: 50%; /* Centered horizontally */
+        transform: translateX(-50%); /* Center image */
+    }
+}
+
+/* For mobile devices (screen width 480px and below) */
+@media (max-width: 480px) {
+    header .container img {
+        height: 40px; /* Smaller for mobile */
+        top: 18px;
+        left: 50%; /* Centered horizontally */
+        transform: translateX(-50%); /* Center image */
+    }
+}
+
+/* Header */
+header {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    position: relative;
+}
+
+header .logo {
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #005bb5;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://images.unsplash.com/photo-1505751172876-fa1923c5c528?fit=crop&w=1920&q=80') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    padding: 15px 30px;
+    background-color: #ffcc00;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #ff9933;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    min-width: 250px;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-item h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #0073e6;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Doctors Section */
+.doctors {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.doctors h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.doctor-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.doctor-item {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 250px;
+}
+.doctor-item img{
+    height: 350px;
+    width: 202px;
+}
+
+.doctor-item img {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.doctor-item h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #0073e6;
+}
+
+.doctor-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.testimonial-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial-item {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 250px;
+}
+
+.testimonial-item p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.testimonial-item h4 {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #0073e6;
+}
+
+/* Booking Section */
+.book {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.book h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.book form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+}
+
+.book form label {
+    font-size: 1rem;
+    color: #555;
+    text-align: left;
+}
+
+.book form input, 
+.book form select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.book form button {
+    grid-column: span 2;
+    padding: 15px 30px;
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.book form button:hover {
+    background-color: #005bb5;
+}
+
+/* Footer */
+footer {
+    padding: 40px 0;
+    background-color: #0073e6;
+    color: #fff;
+    text-align: center;
+}
+
+footer .footer-info ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .footer-info ul li a {
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+footer .footer-info ul li a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+/* Default styles are for larger screens (desktops) */
+
+/* For Tablets and Smaller Screens (landscape and smaller) */
+@media screen and (max-width: 1024px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .doctor-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer .footer-info ul {
+        justify-content: center;
+        padding: 0;
+    }
+}
+
+/* For Mobile Phones (portrait) */
+@media screen and (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .doctor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Adjust form on small screens */
+    form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    footer .footer-info {
+        text-align: center;
+    }
+}
+
+/* For Extra Small Mobile Phones

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.R Hospital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="">
+            <h1 class="logo">R.R Hospital</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#doctors">Doctors</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#book">Book Appointment</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Best healthcare at your Place</h2>
+            <p>Providing trusted and quality medical care for over 10 years</p>
+            <a href="#book" class="btn">Book an Appointment</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Physiology</h3>
+                    <p>Get complete diagnose from experienced specialist.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Gyencology</h3>
+                    <p>A new Life from a Experienced Life.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Emergency Care</h3>
+                    <p>24/7 emergency services for critical care.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="doctors">
+        <div class="container">
+            <h2>Our Expert Doctors</h2>
+            <div class="doctor-grid">
+                <div class="doctor-item">
+                    <img src="s.p.jpg" alt="Doctor Image">
+                    <h3>Dr. S.P Awasthi</h3>
+                    <p>Physician, MBBS</p>
+                </div>
+                <div class="doctor-item">
+                    <img src="neha.jpg" alt="Doctor Image">
+                    <h3>Dr. Neha Awasthi</h3>
+                    <p>Gyencologist</p>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Patients Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-item">
+                    <p>"The doctors at RR hospital saved my life! Their care is unmatched."</p>
+                    <h4>- Sanju Devi</h4>
+                </div>
+                <div class="testimonial-item">
+                    <p>"I received the best orthopedic treatment. Highly recommend."</p>
+                    <h4>- leeladhar Awasthi</h4>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Outstanding emergency care. The staff was quick and professional."</p>
+                    <h4>- Raju Yadav</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Booking Section -->
+    <section id="book" class="book">
+        <div class="container">
+            <h2>Book an Appointment</h2>
+            <form id="appointmentForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="service">Service:</label>
+                <select id="service" name="service" required>
+                    <option value="Cardiology">Physiology</option>
+                    <option value="Neurology">Gyencology</option>
+                    <option value="Emergency Care">Emergency Care</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <h4>Follow us on Social Media:</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+            <p>&copy; 2024 RR Hospitals. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
